@@ -1,0 +1,48 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    @include btn;
+    border-radius: $radius;
+  }
+  
+  .default {
+    background-color: map-get($themes, 'default');
+    @include transition;
+    &:hover {
+      background-color: lighten(map-get($themes, 'default'), 15%)
+    }
+  }
+  
+  .error {
+    background-color: map-get($themes, 'error');
+    @include transition;
+    &:hover {
+      background-color: lighten(map-get($themes, 'error'), 15%)
+    }
+  }
+  
+  .info {
+    background-color: map-get($themes, 'info');
+    @include transition;
+    &:hover {
+      background-color: lighten(map-get($themes, 'info'), 15%)
+    }
+  }
+  
+  .success {
+    background-color: map-get($themes, 'success');
+    @include transition;
+    &:hover {
+      background-color: lighten(map-get($themes, 'success'), 15%)
+    }
+  }
+  
+  .warning {
+    background-color: map-get($themes, 'warning');
+    @include transition;
+    &:hover {
+      background-color: lighten(map-get($themes, 'warning'), 15%)
+    }
+  }
